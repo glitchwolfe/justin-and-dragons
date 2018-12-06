@@ -12,27 +12,23 @@ self.__precacheManifest = [
     "url": "/justin-and-dragons/static/media/Hada.213d5654.png"
   },
   {
-    "revision": "9abaaa0d0be1dd75a101b0717ddba0ce",
-    "url": "/justin-and-dragons/static/media/Broxigar.9abaaa0d.png"
-  },
-  {
     "revision": "b85775099a3049ac134c",
     "url": "/justin-and-dragons/static/js/runtime~main.b8577509.js"
   },
   {
-    "revision": "8af176dce3bcc719a68d",
-    "url": "/justin-and-dragons/static/js/main.8af176dc.chunk.js"
+    "revision": "6979c3b55e55feceb10b",
+    "url": "/justin-and-dragons/static/js/main.6979c3b5.chunk.js"
   },
   {
-    "revision": "c7e0ca36d3fa89e1dc3c",
-    "url": "/justin-and-dragons/static/js/1.c7e0ca36.chunk.js"
+    "revision": "6318bd3f9b0d20314bdd",
+    "url": "/justin-and-dragons/static/js/1.6318bd3f.chunk.js"
   },
   {
-    "revision": "8af176dce3bcc719a68d",
-    "url": "/justin-and-dragons/static/css/main.3f64e7b3.chunk.css"
+    "revision": "6979c3b55e55feceb10b",
+    "url": "/justin-and-dragons/static/css/main.7a93eb77.chunk.css"
   },
   {
-    "revision": "97ec736858e724c1ae4e41de16a2cb89",
+    "revision": "d90e97431a72b701f4dca9a15df21337",
     "url": "/justin-and-dragons/index.html"
   }
 ];
