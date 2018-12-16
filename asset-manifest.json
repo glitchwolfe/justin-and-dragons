@@ -1,7 +1,7 @@
 {
   "main.css": "/justin-and-dragons/static/css/main.7c175d5d.chunk.css",
-  "main.js": "/justin-and-dragons/static/js/main.a8f931bb.chunk.js",
-  "main.js.map": "/justin-and-dragons/static/js/main.a8f931bb.chunk.js.map",
+  "main.js": "/justin-and-dragons/static/js/main.477a8973.chunk.js",
+  "main.js.map": "/justin-and-dragons/static/js/main.477a8973.chunk.js.map",
   "static/js/1.6318bd3f.chunk.js": "/justin-and-dragons/static/js/1.6318bd3f.chunk.js",
   "static/js/1.6318bd3f.chunk.js.map": "/justin-and-dragons/static/js/1.6318bd3f.chunk.js.map",
   "runtime~main.js": "/justin-and-dragons/static/js/runtime~main.b8577509.js",
@@ -12,6 +12,6 @@
   "static/media/Hada.png": "/justin-and-dragons/static/media/Hada.213d5654.png",
   "static/css/main.7c175d5d.chunk.css.map": "/justin-and-dragons/static/css/main.7c175d5d.chunk.css.map",
   "index.html": "/justin-and-dragons/index.html",
-  "precache-manifest.03115d6b164ff75602411d60da9905a8.js": "/justin-and-dragons/precache-manifest.03115d6b164ff75602411d60da9905a8.js",
+  "precache-manifest.0fbab5087214389444b7ca081d00d6e4.js": "/justin-and-dragons/precache-manifest.0fbab5087214389444b7ca081d00d6e4.js",
   "service-worker.js": "/justin-and-dragons/service-worker.js"
 }

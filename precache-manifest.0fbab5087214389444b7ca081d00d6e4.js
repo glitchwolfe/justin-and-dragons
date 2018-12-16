@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/justin-and-dragons/static/js/runtime~main.b8577509.js"
   },
   {
-    "revision": "a8f931bb84d7632b4095",
-    "url": "/justin-and-dragons/static/js/main.a8f931bb.chunk.js"
+    "revision": "477a8973bc7de97467a1",
+    "url": "/justin-and-dragons/static/js/main.477a8973.chunk.js"
   },
   {
     "revision": "6318bd3f9b0d20314bdd",
     "url": "/justin-and-dragons/static/js/1.6318bd3f.chunk.js"
   },
   {
-    "revision": "a8f931bb84d7632b4095",
+    "revision": "477a8973bc7de97467a1",
     "url": "/justin-and-dragons/static/css/main.7c175d5d.chunk.css"
   },
   {
-    "revision": "031a99de6b6ce3b1c6d85d8d4b82e75f",
+    "revision": "d93a4b9b4fa4870181895224e3d960fa",
     "url": "/justin-and-dragons/index.html"
   }
 ];
