@@ -10,7 +10,6 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 # To Do
 
 * UX Improvements:
-- Add support for left/right arrow keys
 - Translate vertical scroll wheel activity into horizontal scroll
 
 * Presentation/Extra Polish:

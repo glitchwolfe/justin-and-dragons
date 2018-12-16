@@ -27,6 +27,13 @@ class App extends Component {
     });
   };
 
+  handleKeyPress = (e) => {
+    if(e.keyCode === 37)
+      this.previousItem()
+    if(e.keyCode === 39)
+      this.nextItem()
+  };
+
   // Calls back once scrolling has stopped.
   // We use this to determine when to stop the Party's walking animation
   scrollStop = (callback) => {
@@ -141,6 +148,9 @@ class App extends Component {
     // Create scroll listener
     document.getElementById('parallax').addEventListener('scroll', this.handleScroll);
 
+    // Create keypress listener
+    window.addEventListener("keyup", this.handleKeyPress);
+
     // This line prevents the characters from walking indefinitely on page refresh
     setTimeout(() => { document.getElementById("partyList").classList.remove("walking") }, 0);
 
@@ -158,6 +168,7 @@ class App extends Component {
 
   componentWillUnmount() {
     document.getElementById('parallax').removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("keyup", this.handleKeyPress);    
   }
 
   render() {
