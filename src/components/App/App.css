@@ -1,0 +1,74 @@
+.App { }
+
+.App-header {
+  background-color: #FFFFF0;
+  min-height: 50px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  box-shadow: 1px 1px 5px #333;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.App-header img{
+  margin: 5px 15px;
+  max-height: 50px;
+}
+
+.App-header .timelineButtons{
+  float:right;
+}
+
+.parallax{
+  position: absolute;
+  height:   100%;
+  width:    100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  perspective: 1px;
+}
+
+.parallax .layer{
+  position: absolute;
+  top:    0;
+  left:   0;
+  right:  0;
+  bottom: 0;
+}
+
+.parallax .layer .background{
+  position: absolute;
+  display:  block;
+  left:     0;
+  right:    0;
+
+  width:  100%;
+  height: 100%;
+
+  background-position: left;
+  background-repeat:   repeat-x;
+  background-size:     contain;
+  image-rendering:     pixelated;
+}
+
+.parallax #layer_1{ transform: translateZ(-3px) scale(4); }
+.parallax #layer_2{ transform: translateZ(-2px) scale(3); }
+.parallax #layer_3{ transform: translateZ(-1px) scale(2); }
+.parallax #layer_4{ transform: translateZ(0); }
+
+.parallax #layer_1 .background{
+  background-image: url('../../images/background/forest/forest bg.png');
+}
+.parallax #layer_2 .background{
+  background-image: url('../../images/background/forest/forest far.png');
+}
+.parallax #layer_3 .background{
+  background-image: url('../../images/background/forest/forest mid.png');
+}
+.parallax #layer_4 .background{
+  background-image: url('../../images/background/forest/forest close.png');
+}

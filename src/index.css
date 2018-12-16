@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+body, main {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: url('./images/ivan-gromov-580410-unsplash.jpg') repeat-x;
+
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
