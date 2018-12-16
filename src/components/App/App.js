@@ -62,7 +62,7 @@ class App extends Component {
         this.currentEventIndex = i;
 
         // Change background, if necessary
-        if(this.currentBackground === '' || this.currentBackground != currentEvent.location){
+        if(this.currentBackground === '' || this.currentBackground !== currentEvent.location){
           this.setBackground(currentEvent.location);
         }
 

@@ -9,6 +9,21 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 
 # To Do
 
+* UX Improvements:
+- Add support for left/right arrow keys
+- Translate vertical scroll wheel activity into horizontal scroll
+
+* Presentation/Extra Polish:
+- Figure out a place to use the DnD poster
+- Create an intro slide/screen
+
+* Party Members:
+- Improve the logic behind comparing party members on event changes
+- Fix animations for members joining/leaving
+- Adjust positioning of party members
+- Choose new sprites for all party members
+
+* Backgrounds:
 - Fix width calculation for parallax layers (in firefox)
 - Find a solution for crossfading from scene to scene, CSS transition is very resource intensive
 
