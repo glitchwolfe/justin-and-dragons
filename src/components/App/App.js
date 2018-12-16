@@ -13,6 +13,7 @@ class App extends Component {
   ticking         = false;
   activeElement;
   currentEventIndex;
+  currentBackground = '';
 
   handleScroll = () => {
     this.lastScrollX = window.scrollX;
@@ -60,6 +61,11 @@ class App extends Component {
         element.classList.add("active");
         this.currentEventIndex = i;
 
+        // Change background, if necessary
+        if(this.currentBackground === '' || this.currentBackground != currentEvent.location){
+          this.setBackground(currentEvent.location);
+        }
+
         // Display event details 
         document.getElementById("eventDescription").innerHTML = `
           <p class="event">${currentEvent.event}</p>
@@ -72,6 +78,46 @@ class App extends Component {
       }
       i++;
     }
+  }
+
+  setBackground = (index) => {
+    console.log('setting background...',index)
+
+    let parallaxContainer = document.getElementById('parallax');
+  
+    switch(index){
+      default:
+      case "1":
+        parallaxContainer.classList.add('forest');
+
+        parallaxContainer.classList.remove('cemetery');
+        parallaxContainer.classList.remove('dungeon');
+        parallaxContainer.classList.remove('lava');
+        break;
+      case "2":
+        parallaxContainer.classList.add('cemetery');
+
+        parallaxContainer.classList.remove('forest');
+        parallaxContainer.classList.remove('dungeon');
+        parallaxContainer.classList.remove('lava');
+        break;
+      case "3":
+        parallaxContainer.classList.add('dungeon');
+
+        parallaxContainer.classList.remove('cemetery');
+        parallaxContainer.classList.remove('forest');
+        parallaxContainer.classList.remove('lava');
+        break;
+      case "4":
+        parallaxContainer.classList.add('lava');
+
+        parallaxContainer.classList.remove('cemetery');
+        parallaxContainer.classList.remove('forest');
+        parallaxContainer.classList.remove('dungeon');
+        break;
+    }
+
+    this.currentBackground = index;
   }
 
   nextItem = () => {

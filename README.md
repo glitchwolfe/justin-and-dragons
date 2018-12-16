@@ -10,8 +10,7 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 # To Do
 
 - Fix width calculation for parallax layers (in firefox)
-- Change background images depending on the currently active event
-- Add "location" to each event (to determine background)
+- Find a solution for crossfading from scene to scene, CSS transition is very resource intensive
 
 # Long-Term To Do's
 
