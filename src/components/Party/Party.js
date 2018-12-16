@@ -42,11 +42,15 @@ class Party extends Component {
 
   createParty = () => {
     let partyElements = [];
+    let i = 0;
     for(let member of partyMembers){
-      partyElements.push(<li id={member}>
-        <img src={hada} alt="Hada" />
-        <p>{member}</p>
-      </li>);
+      partyElements.push(
+        <li id={member} key={i}>
+          <img src={hada} alt="Hada" />
+          <p>{member}</p>
+        </li>
+      );
+      i++;
     }
     return partyElements;
   }

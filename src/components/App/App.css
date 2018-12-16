@@ -20,7 +20,21 @@
 }
 
 .App-header .timelineButtons{
-  float:right;
+  float:   right;
+  padding: 0 15px;
+}
+
+.timelineButtons button{
+  font-size: 2.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  border: none;
+  margin: 10px;
+  color: white;
+  background: #000;
 }
 
 .parallax{

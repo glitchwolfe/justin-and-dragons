@@ -75,16 +75,21 @@ class App extends Component {
   }
 
   nextItem = () => {
-    console.log(this.currentEventIndex + 1);
+    this.scrollToEvent(this.currentEventIndex + 1);
   }
 
   previousItem = () => {
-    console.log(this.currentEventIndex - 1);
+    this.scrollToEvent(this.currentEventIndex - 1);
   }
 
   scrollToEvent = (i) => {
-    // this.timelineEvents[i]
-  } 
+    if(i >= 0 && this.timelineEvents[i]){
+      document.getElementById('parallax').scrollTo({
+        left:     this.timelineEvents[i].offsetLeft, 
+        behavior: "smooth"
+      }); 
+    }
+  }
 
   componentDidMount() {
     // Create scroll listener
@@ -100,13 +105,9 @@ class App extends Component {
     // Set parallax background to width of the timeline
     let timelineWidth  = document.getElementById('timelineList').clientWidth;
     let parallaxLayers = document.getElementsByClassName('layer');
-    let parallaxContainer = document.getElementById('parallax');
-    parallaxContainer.style.maxWidth = `${timelineWidth}px`;
     for(let layer of parallaxLayers){
       layer.style.width = `${timelineWidth}px`;
-       
     }
-    console.log(timelineWidth)
   }
 
   componentWillUnmount() {
@@ -119,8 +120,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} alt="Justin and Dragons Logo" />
           <div className="timelineButtons">
-            <button onClick={this.previousItem()}>Prev</button>
-            <button onClick={this.nextItem()}>Next</button>
+            <button onClick={this.previousItem}>&#8249;</button>
+            <button onClick={this.nextItem}>&#8250;</button>
           </div>
         </header>
         <main>

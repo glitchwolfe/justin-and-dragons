@@ -6,13 +6,15 @@ class Timeline extends Component {
 
   createTimeline = () => {
     let events = [];
+    let i = 0;
     for(let event of timelineData){
       events.push(
-        <li className="timelineEvent">
+        <li className="timelineEvent" key={i}>
           <p className="pointDate">{event.date}</p>
           <span className="point"></span>
         </li>
       );
+      i++;
     }
     return events;
   }
