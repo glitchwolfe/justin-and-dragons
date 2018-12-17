@@ -49,6 +49,20 @@
     "location":"1"
   },
   {
+    "date":"September 25th, 2016",
+    "event":"Siege on Haven Arc",
+    "description":"The party learns of Kalarels plan to attack the capital city of Haven. The Party convinces High Paladin Otis, Broxigars Father to begin getting the city ready for a attack.", 
+    "partyMembers":["Broxigar","Lothkorius","Rhogog","Carmine","Thorkel","Sawyer"],
+    "location":"1"
+  },
+  {
+    "date":"October 2nd, 2016",
+    "event":"The battle begins!",
+    "description":"The city was attacked from the inside by suicide plague bomber that caused some of Haven troops become undead! The Heroes begin fighter there way through the city to save as many civilians as possible.",
+    "partyMembers":["Broxigar","Lothkorius","Rhogog","Carmine","Thorkel","Sawyer"],
+    "location":"1"
+  },
+  {
     "date":"October 16th, 2016",
     "event":"Carmine dies.",
     "description":"Carmine defeated in combat by 2 Shield Guardians. both minions of the lich, During his siege on Haven.",
@@ -237,6 +251,13 @@
     "date":"November 11th, 2018",
     "event":"Zo Hati looking for piece",
     "description":"The Way of the Long Death Monk, Grave Domain Cleric find the party in mourning after the death of their friend Hamilcar. Familiar in many ceremonies toward the deda he decided to help them in there time of need. Only to learn they may be able to aid him in the deciphering the mysterious markings on his body.",
+    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "Bthuhl", "Zo"],
+    "location":"4"
+  },
+  {
+    "date":"November 18th 2018",
+    "event":"Family Matters",
+    "description":"Aoi’s Father Rikuto threatening the life of the only person she cares about the family  butler Damian. Unable to pursue their original goal and save Floon they decided to save Damian first. This all backfires when Cero takes things into his own hands deciding to pursue the Xanathar gang on his own which forces the party to aid him before word gets out of their involvement. Battling there way through the sewer and into the Xanathar hideout the encounter a Mind Flayer and a Large Orc Wizard who has floon pinned to the floor by his foot. The mind flayer leaving the Orc to do the dirty work leaves while leaving behind an army intellect devourers. The party battles and successfully Defeated the Orc Wizard saving Floon.",
     "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "Bthuhl", "Zo"],
     "location":"4"
   }

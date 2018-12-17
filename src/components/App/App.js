@@ -27,6 +27,7 @@ class App extends Component {
     });
   };
 
+  // Use left/right keys for prev/next item
   handleKeyPress = (e) => {
     if(e.keyCode === 37)
       this.previousItem()

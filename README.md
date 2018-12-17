@@ -4,13 +4,20 @@
 
 An interactive timeline of the events so far in Justin's D&D campaign. Built in React, hosted on GitHub.
 
+# Credits
+
 - Code by [Jon](http://jglover.space/)
-- Concept by [Justin](https://twitter.com/Blaynevin)
+- Concept and content by [Justin](https://twitter.com/Blaynevin)
+- Backgrounds by [momeG](https://mome-g.itch.io/pixel-art-parallax-backgrounds)
 
 # To Do
 
+* Locations
+- 1st is forest, 2nd desert, 3rd is other forest, 4th is purple crystals
+
 * UX Improvements:
 - Translate vertical scroll wheel activity into horizontal scroll
+- Crossfade descriptions when they change
 
 * Presentation/Extra Polish:
 - Figure out a place to use the DnD poster
@@ -28,6 +35,10 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 
 # Long-Term To Do's
 
+- Refactor the hell out of this
+    - Create component specifically to handle parallax images/css
+    - Move as much stuff as possible out of App.js and into their relevant components
+- Add page routing
 - Add Page: Player
   - Show a list of characters that player has used
   - Show player/character statistics
