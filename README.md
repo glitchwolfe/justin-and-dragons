@@ -12,9 +12,6 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 
 # To Do
 
-* Locations
-- 1st is forest, 2nd desert, 3rd is other forest, 4th is purple crystals
-
 * UX Improvements:
 - Translate vertical scroll wheel activity into horizontal scroll
 - Crossfade descriptions when they change
@@ -27,7 +24,7 @@ An interactive timeline of the events so far in Justin's D&D campaign. Built in 
 - Improve the logic behind comparing party members on event changes
 - Fix animations for members joining/leaving
 - Adjust positioning of party members
-- Choose new sprites for all party members
+- Choose new sprites for all party members (WIP)
 
 * Backgrounds:
 - Fix width calculation for parallax layers (in firefox)

@@ -25,106 +25,14 @@
 }
 
 .timelineButtons button{
-  font-size: 2.5rem;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size:   2.5rem;
+  width:       2.5rem;
+  height:      2.5rem;
   line-height: 2.5rem;
+  border-radius: 50%;
   padding: 0;
   border: none;
   margin: 10px;
   color: white;
   background: #000;
-}
-
-.parallax{
-  position: absolute;
-  height:   100%;
-  width:    100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  perspective: 1px;
-}
-
-.parallax .layer{
-  position: absolute;
-  top:    0;
-  left:   0;
-  right:  0;
-  bottom: 0;
-}
-
-.parallax .layer .background{
-  position: absolute;
-  display:  block;
-  left:     0;
-  right:    0;
-
-  width:  100%;
-  height: 100%;
-
-  background-position: left;
-  background-repeat:   repeat-x;
-  background-size:     contain;
-  image-rendering:     pixelated;
-
-  /* Warning: SUPER resource intensive! Turns out crossfading four full-screen background images takes a lot of power */
-  /* transition: background-image .3s; */
-}
-
-.parallax #layer_1{ transform: translateZ(-3px) scale(4); }
-.parallax #layer_2{ transform: translateZ(-2px) scale(3); }
-.parallax #layer_3{ transform: translateZ(-1px) scale(2); }
-.parallax #layer_4{ transform: translateZ(0); }
-
-.parallax.forest #layer_1 .background{
-  background-image: url('../../images/background/forest/forest bg.png');
-}
-.parallax.forest #layer_2 .background{
-  background-image: url('../../images/background/forest/forest far.png');
-}
-.parallax.forest #layer_3 .background{
-  background-image: url('../../images/background/forest/forest mid.png');
-}
-.parallax.forest #layer_4 .background{
-  background-image: url('../../images/background/forest/forest close.png');
-}
-
-.parallax.cemetery #layer_1 .background{
-  background-image: url('../../images/background/cemetery/cemetery bg.png');
-}
-.parallax.cemetery #layer_2 .background{
-  background-image: url('../../images/background/cemetery/cemetery far.png');
-}
-.parallax.cemetery #layer_3 .background{
-  background-image: url('../../images/background/cemetery/cemetery mid.png');
-}
-.parallax.cemetery #layer_4 .background{
-  background-image: url('../../images/background/cemetery/cemetery close.png');
-}
-
-.parallax.dungeon #layer_1 .background{
-  background-image: url('../../images/background/dungeon/dungeon bg.png');
-}
-.parallax.dungeon #layer_2 .background{
-  background-image: url('../../images/background/dungeon/dungeon far.png');
-}
-.parallax.dungeon #layer_3 .background{
-  background-image: url('../../images/background/dungeon/dungeon mid.png');
-}
-.parallax.dungeon #layer_4 .background{
-  background-image: url('../../images/background/dungeon/dungeon close.png');
-}
-
-.parallax.lava #layer_1 .background{
-  background-image: url('../../images/background/lava/lava bg.png');
-}
-.parallax.lava #layer_2 .background{
-  background-image: url('../../images/background/lava/lava far.png');
-}
-.parallax.lava #layer_3 .background{
-  background-image: url('../../images/background/lava/lava mid.png');
-}
-.parallax.lava #layer_4 .background{
-  background-image: url('../../images/background/lava/lava close.png');
 }

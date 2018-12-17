@@ -1,7 +1,7 @@
 .Party{
   position: fixed;
-  left:     2rem;
-  bottom:   2rem;
+  left:     2.5rem;
+  bottom:   8rem;
 }
 
 .Party ul{
@@ -11,32 +11,38 @@
 
   max-width: 250px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr;
+
+  grid-column-gap: 15px;
 }
 
 .Party li{
-  float:   left;
-  display: inline;
-  margin:  0 10px;
-
   color:       #FFFFF0;
   font-weight: bold;
   text-shadow: 1px 1px 1px #000;
+  text-align:  center;
 
   transition-timing-function: ease-in;
   transition: 0.25s;
-  transform: translateY(200%);
+  transform:  translateX(-200%);
 }
 
 .Party li.in-party{
   transition-timing-function: ease-out;
   transition: 0.25s;
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
 .Party li img{
-  float: left;
+  height: 80px; 
+  image-rendering: pixelated;
+}
+
+.Party li img,
+.Party li p{
+  display: block;
+  margin:  auto;
 }
 
 #partyList.walking li img{

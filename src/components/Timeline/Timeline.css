@@ -65,7 +65,8 @@ ol li .point {
 }
 
 #eventDescription {
-  transition: 0.3s ease all;
+  display: none;
+  transition: 0.3s ease height;
 
   position: fixed;
   top:      100px;

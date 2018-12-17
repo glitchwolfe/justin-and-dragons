@@ -1,0 +1,92 @@
+
+.parallax{
+    position: absolute;
+    height:   100%;
+    width:    100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    perspective: 1px;
+  }
+  
+  .parallax .layer{
+    position: absolute;
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
+  }
+  
+  .parallax .layer .background{
+    position: absolute;
+    display:  block;
+    left:     0;
+    right:    0;
+  
+    width:  100%;
+    height: 100%;
+  
+    background-position: left;
+    background-repeat:   repeat-x;
+    background-size:     contain;
+    image-rendering:     pixelated;
+  
+    /* Warning: SUPER resource intensive! Turns out crossfading four full-screen background images takes a lot of power */
+    /* transition: background-image .3s; */
+  }
+  
+  .parallax #layer_1{ transform: translateZ(-3px) scale(4); }
+  .parallax #layer_2{ transform: translateZ(-2px) scale(3); }
+  .parallax #layer_3{ transform: translateZ(-1px) scale(2); }
+  .parallax #layer_4{ transform: translateZ(0); }
+  
+  .parallax.desert #layer_1 .background{
+    background-image: url('../../images/background/desert/bg.png');
+  }
+  .parallax.desert #layer_2 .background{
+    background-image: url('../../images/background/desert/far.png');
+  }
+  .parallax.desert #layer_3 .background{
+    background-image: url('../../images/background/desert/mid.png');
+  }
+  .parallax.desert #layer_4 .background{
+    background-image: url('../../images/background/desert/close.png');
+  }
+  
+  .parallax.forest #layer_1 .background{
+    background-image: url('../../images/background/forest/forest bg.png');
+  }
+  .parallax.forest #layer_2 .background{
+    background-image: url('../../images/background/forest/forest far.png');
+  }
+  .parallax.forest #layer_3 .background{
+    background-image: url('../../images/background/forest/forest mid.png');
+  }
+  .parallax.forest #layer_4 .background{
+    background-image: url('../../images/background/forest/forest close.png');
+  }
+  
+  .parallax.forest2 #layer_1 .background{
+    background-image: url('../../images/background/forest2/forest bg.png');
+  }
+  .parallax.forest2 #layer_2 .background{
+    background-image: url('../../images/background/forest2/forest far.png');
+  }
+  .parallax.forest2 #layer_3 .background{
+    background-image: url('../../images/background/forest2/forest mid.png');
+  }
+  .parallax.forest2 #layer_4 .background{
+    background-image: url('../../images/background/forest2/forest close.png');
+  }
+  
+  .parallax.crystals #layer_1 .background{
+    background-image: url('../../images/background/crystals/bg.png');
+  }
+  .parallax.crystals #layer_2 .background{
+    background-image: url('../../images/background/crystals/far.png');
+  }
+  .parallax.crystals #layer_3 .background{
+    background-image: url('../../images/background/crystals/mid.png');
+  }
+  .parallax.crystals #layer_4 .background{
+    background-image: url('../../images/background/crystals/close.png');
+  }

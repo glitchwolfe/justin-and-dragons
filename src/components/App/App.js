@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import '../Background/Background.css';
 
 import logo from '../../images/justin-and-dragons-logo.png';
 
@@ -15,15 +16,12 @@ class App extends Component {
   currentEventIndex;
   currentBackground = '';
 
+  // When scrolling, update the active event and trigger the party walking animation
   handleScroll = () => {
     this.lastScrollX = window.scrollX;
     window.requestAnimationFrame(() => {
-      // Update timeline information
-      this.checkIfActive();
-      
-      // Toggle Walking Animation 
-      document.getElementById("partyList").classList.add("walking");
-      this.scrollStop(() => { document.getElementById("partyList").classList.remove("walking") });
+      this.determineActiveEvent();
+      this.refs.party.triggerWalkingAnimation();
     });
   };
 
@@ -35,24 +33,13 @@ class App extends Component {
       this.nextItem()
   };
 
-  // Calls back once scrolling has stopped.
-  // We use this to determine when to stop the Party's walking animation
-  scrollStop = (callback) => {
-    if (!callback || typeof callback !== 'function') return;
-    var isScrolling;
-    document.getElementById('parallax').addEventListener('scroll', (event) => {
-      window.clearTimeout(isScrolling);
-      isScrolling = setTimeout(() => { callback() }, 66);
-    }, false);
-  };
-
   getTimelineEvents = () => {
     this.timelineEvents = document.getElementsByClassName("timelineEvent");
   }
 
   // Check the scroll position of all timeline elements
   // Mark element as active if it is within 500px of the edge of the screen
-  checkIfActive = () => {
+  determineActiveEvent = () => {
     let i = 0;
     for (let element of this.timelineEvents){
 
@@ -98,30 +85,30 @@ class App extends Component {
       case "1":
         parallaxContainer.classList.add('forest');
 
-        parallaxContainer.classList.remove('cemetery');
-        parallaxContainer.classList.remove('dungeon');
-        parallaxContainer.classList.remove('lava');
+        parallaxContainer.classList.remove('forest2');
+        parallaxContainer.classList.remove('crystals');
+        parallaxContainer.classList.remove('desert');
         break;
       case "2":
-        parallaxContainer.classList.add('cemetery');
+        parallaxContainer.classList.add('desert');
 
         parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('dungeon');
-        parallaxContainer.classList.remove('lava');
+        parallaxContainer.classList.remove('forest2');
+        parallaxContainer.classList.remove('crystals');
         break;
       case "3":
-        parallaxContainer.classList.add('dungeon');
+        parallaxContainer.classList.add('forest2');
 
-        parallaxContainer.classList.remove('cemetery');
+        parallaxContainer.classList.remove('crystals');
         parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('lava');
+        parallaxContainer.classList.remove('desert');
         break;
       case "4":
-        parallaxContainer.classList.add('lava');
+        parallaxContainer.classList.add('crystals');
 
-        parallaxContainer.classList.remove('cemetery');
+        parallaxContainer.classList.remove('desert');
         parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('dungeon');
+        parallaxContainer.classList.remove('forest2');
         break;
     }
 
@@ -157,7 +144,7 @@ class App extends Component {
 
     // Retrieve the list of timeline events, then check which one is active
     this.getTimelineEvents();
-    this.checkIfActive();
+    this.determineActiveEvent();
 
     // Set parallax background to width of the timeline
     let timelineWidth  = document.getElementById('timelineList').clientWidth;
