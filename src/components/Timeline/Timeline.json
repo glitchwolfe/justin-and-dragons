@@ -3,98 +3,98 @@
     "date":"March 20, 2016",
     "event":"First D&D Session",
     "description":"Dani, John, Kenny, Matt, and Tom Start their adventure in the world of Emmoros on the Continent of Opril. Dani the Paladin Half Orc, Broxigar. John the Dragonborn Barbarian Rho’gog.  Kenny the Human Ranger, Rayven. Matt the Half Orc Samurai, Hada. Tom the Human Druid, Lothkorius. All being joined together by a mysterious wizard who betrays the group and becomes the Lich Kalarel the Vile! The group somehow escaping his clutches and awakening with strange burn marks on their bodies. The adventure begins!",
-    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rhogog"],
+    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rho'gog"],
     "location":"1"
   },
   {
     "date":"April 3rd, 2016",
     "event":"Barovia Arc begins.",
     "description":"The Party is sent to Rayvenloft by a mysterious mist. What Adventures await in this strange and dangerous place.",
-    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rhogog"],
+    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rho'gog"],
     "location":"1"
   },
   {
     "date":"April 17, 2016",
     "event":"Joe joins the party!",
     "description":"The Party is lead by the mists of Barovia toward a strange decrepit house. In this house strange things are afoot while exploring they find Joe’s character Carmine, the Human Blood Hunter shackled in the basement. After helping the group unravel the secrets of the Death House and stopping an evil ritual by defeating a shambling mound. The house angry with what the party has done comes to life attacking them through the house, the party narrowly escaping with their lives. Carmine decides to join the party bring the party total to 6!",
-    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rhogog","Carmine"],
+    "partyMembers":["Hada","Broxigar","Lothkorius","Rayven","Rho'gog","Carmine"],
     "location":"1"
   },
   {
     "date":"May 8, 2016",
     "event":"Thorkel and Sawyer join the party.",
     "description":"Meeting there host and Villian in Borovia Strahd Von Zarovich. The party becomes trapped in the local Blood of the vine Tavern by a horde of undead minions sent by strahd. While holding off the onslaught of zombies, Hada falls in battle to Strahd himself piercing his heart! Soon after the Dwarf Cleric Thorkel arrives in a blast of light to begin dispatching the undead scourge with holy justice! At the same moment Bri playing Sawyer the Elf Rogue appears to help in keeping the zombies at bay. With some fast thinking and some explosive kegs the group escapes the clutches of Strahd. Thorkel and Sawyer join the party to hopfully find a way to escape Barovia bring the party to 7!",
-    "partyMembers":["Broxigar","Lothkorius","Rayven","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rayven","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"June 19, 2016",
     "event":"The Party Escapes Barovia",
     "description":"The party escapes Barovia returning to Opril leaving Strahd to his own devices. Only to find themselves in the middle of a war between the arcane and the bringers of light!",
-    "partyMembers":["Broxigar","Lothkorius","Rayven","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rayven","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"June 26th, 2016",
     "event":"The Great Divide Arc begins",
     "description":"The war between Arcane and Holy has been going on for 6 months while the party was trapped in Barovia. After arriving back home they are forced to pick sides in the conflict or maybe create a side of their own.",
-    "partyMembers":["Broxigar","Lothkorius","Rayven","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rayven","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"July 10, 2016",
     "event":"Rayven dies.",
     "description":"Rayven fall victim to a trapped chest after a boss fight with a gelatinous cube. Being torn in half by a mimic. Kenny leaves the party soon after. Dropping the party to 6!",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"September 25th, 2016",
     "event":"Siege on Haven Arc",
     "description":"The party learns of Kalarels plan to attack the capital city of Haven. The Party convinces High Paladin Otis, Broxigars Father to begin getting the city ready for a attack.", 
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"October 2nd, 2016",
     "event":"The battle begins!",
     "description":"The city was attacked from the inside by suicide plague bomber that caused some of Haven troops become undead! The Heroes begin fighter there way through the city to save as many civilians as possible.",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Carmine","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Carmine","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"October 16th, 2016",
     "event":"Carmine dies.",
     "description":"Carmine defeated in combat by 2 Shield Guardians. both minions of the lich, During his siege on Haven.",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Thorkel","Sawyer"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Thorkel","Sawyer"],
     "location":"1"
   },
   {
     "date":"October 16th, 2016",
     "event":"Bolt Joins the party",
     "description":"After watching Carmine fall and  the heroes struggle against  Kalarel the now Dracolich, Bolt Chambers saves the day by mortally wounding him with his signature rifle. Bolt joins the party!",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Thorkel","Sawyer","Bolt"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Thorkel","Sawyer","Bolt"],
     "location":"1"
   },
   {
     "date":"November 27th, 2016",
     "event":"Ryan joins the party!",
     "description":"Ryan starts his adventure with the party as Rhazer the Tiefling Warlock. Bring the total party members to 7!",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Thorkel","Sawyer","Bolt","Rhazer"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Thorkel","Sawyer","Bolt","Rhazer"],
     "location":"1"
   },
   {
     "date":"December 11th, 2016",
     "event":"Quiet Joins the party!",
     "description":"Rhazer leaves the party for different adventures. Ryan changes to Quiet the Tabaxi Rogue.",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Thorkel","Sawyer","Bolt","Quiet"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Thorkel","Sawyer","Bolt","Quiet"],
     "location":"1"
   },
   {
     "date":"March 19th, 2017",
     "event":"The heroes fail to stop the lich!",
     "description":"After building an army an attempting to stop the invasion of the liches undead army the party is unable to get to him in time to stop his evil plan.",
-    "partyMembers":["Broxigar","Lothkorius","Rhogog","Thorkel","Sawyer","Bolt","Quiet"],
+    "partyMembers":["Broxigar","Lothkorius","Rho'gog","Thorkel","Sawyer","Bolt","Quiet"],
     "location":"1"
   },
 
@@ -105,14 +105,14 @@
     "date":"April 2nd, 2017",
     "event":"Scorched Opril, Campaign 2 begins!",
     "description":"Two thousand years have past since heroes challenged the lich kalarel only to fail in their quest.We meet Argentum the Human Bard, Kom’rk the Thri-kreen Ranger, Magnus the Human Fighter, Thagus the Minotaur Barbarian,and Rozalin the Half-Elf Sorcerer in a world that has been scarred and burned. Where deserts and slavers run rampant, and law and order is something that has been abandoned a long time ago.Welcome to the Scarred Opril. The party meet working as scrap collectors to make ends meet, little do they know what adventure lies in front of them.",
-    "partyMembers":["Argentum", "Komrk", "Magnus", "Thagus", "Rozalin"],
+    "partyMembers":["Argentum", "Kom'rk", "Magnus", "Thagus", "Rozalin"],
     "location":"2"
   },
   {
     "date":"May 15th, 2017",
     "event":"Tom leaves the party!",
     "description":"Tom moves on to become a Dungeon Master himself after being foolishly removed.",
-    "partyMembers":["Komrk", "Magnus", "Thagus", "Rozalin"],
+    "partyMembers":["Kom'rk", "Magnus", "Thagus", "Rozalin"],
     "location":"2"
   },
   {
@@ -164,7 +164,7 @@
     "date":"August 6th, 2017",
     "event":"Aha’qus Adventures, Campaign 3 begins!",
     "description":"We journey to the far continent of Aha’qus in the realm of Emmoros. The party, E’lect the human sorcerer, Vhate the Swashbuckling Rogue Tiefling, Ogda the Orc Fighter, Tannenbaum the Paladin Dwarf. The adventures meet in the inn of a small fishing village on the island The Winters Key. Little do they know this island is not what it seems.",
-    "partyMembers":["Elect","Vhate","Ogda","Tannenbaum"],
+    "partyMembers":["E'lect","Vhate","Ogda","Tannenbaum"],
     "location":"3"
   },
   {
@@ -178,7 +178,7 @@
     "date":"December 20th, 2017",
     "event":"The Litch kalarel the Vile is Vanquished!",
     "description":"The Party with help from the Raven queen reassembles to topple the litch! Broxigar, Lothkorius, Sawyer, Thagus, Thorkel, Rhazer, Rho’gog, Rayven all return and work together to defeat Kalarel once and for all!. The succeed with Rhazer sacrificing himself to pull Kalarel into the Astral plane where his soul still remains.",
-    "partyMembers":["Broxigar", "Thagus", "Thorkel", "Rhazer", "Lothkorius", "Sawyer", "Rhogog", "Rayven"],
+    "partyMembers":["Broxigar", "Thagus", "Thorkel", "Rhazer", "Lothkorius", "Sawyer", "Rho'gog", "Rayven"],
     "location":"3"
   },
   {
@@ -234,6 +234,27 @@
     "location":"4"
   },
   {
+    "date":"July 1st, 2018",
+    "event":"Blackest night",
+    "description":"After taking over and crash landing the airship the party began to heading towards the nearest town. Once there they find the town does not allow travellers and they begin to see that there is more secrets in this town then they originally thought. After entering the town and spending the night they awoke to find all the inhabitants dead. The only people in town to be these robed black shardminds who overpowered the group and kidnapped hamilcar and cornell.",
+    "partyMembers":["Aoi", "Cero", "Cornell", "Denasi", "Hamilcar", "Kasel", "Kormag"],
+    "location":"4"
+  },
+  {
+    "date":"August 5th, 2018",
+    "event":"Shadow Fallen arc",
+    "description":"After there companions Hamilcar and Cornell where kidnap but robed figures the party decided to attempt to following them. Entering into the shadowfell. After traveling some time and saving there part members they discover they have a black crystal like growth growing from there chest. With little time and rush to escape they decide to travel through a heavily guarded lair of Dark Elves to find a portal in the heart of their mountain lair. In this corrupt place Cero meets someone who can give him power and the ability to escape. Cero receives a sword as a gift one that takes the souls of worthy foes he has vanquished.",
+    "partyMembers":["Aoi", "Cero", "Cornell", "Denasi", "Hamilcar", "Kasel", "Kormag"],
+    "location":"4"
+  },
+  {
+    "date":"September 9th, 2018",
+    "event":"Sharn Arc",
+    "description":"After the Party escapes the Shadowfell they arrive at the hometown of their party member Aoi. A technical marvel of a city where Magitek is the life blood of the city. Soon after arriving they meet with a wizard named Volo who request there aid in locating his missing friend and drinking buddy Floon. After discovering floons where abouts the party learns of Aoi’s family and how her father Rikuto a green half dragon is responsible for many of the wrong doings involved within the city.",
+    "partyMembers":["Aoi", "Cero", "Cornell", "Denasi", "Hamilcar", "Kasel", "Kormag"],
+    "location":"4"
+  },
+  {
     "date":"November 11th, 2018",
     "event":"Denasi’s Betrayal! ",
     "description":"Denasi turns to the side of the corrupt Sharminds for unknown reasons. Killing Hamilcar and solidifying his alliance with the corrupted ones.",
@@ -244,21 +265,21 @@
     "date":"November 11th, 2018",
     "event":"Captain B'thuhl’s Crash landing",
     "description":"The Illithid Swashbuckler Rogue crash lands his Mind Spider ship on the All Continent Lupo. looking to repair his ship and keep his crew safe he sides with the party in search of parts to repair his ship.",
-    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "Bthuhl"],
+    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "B'thuhl"],
     "location":"4"
   },
   {
     "date":"November 11th, 2018",
     "event":"Zo Hati looking for piece",
     "description":"The Way of the Long Death Monk, Grave Domain Cleric find the party in mourning after the death of their friend Hamilcar. Familiar in many ceremonies toward the deda he decided to help them in there time of need. Only to learn they may be able to aid him in the deciphering the mysterious markings on his body.",
-    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "Bthuhl", "Zo"],
+    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "B'thuhl", "Zo"],
     "location":"4"
   },
   {
     "date":"November 18th 2018",
     "event":"Family Matters",
     "description":"Aoi’s Father Rikuto threatening the life of the only person she cares about the family  butler Damian. Unable to pursue their original goal and save Floon they decided to save Damian first. This all backfires when Cero takes things into his own hands deciding to pursue the Xanathar gang on his own which forces the party to aid him before word gets out of their involvement. Battling there way through the sewer and into the Xanathar hideout the encounter a Mind Flayer and a Large Orc Wizard who has floon pinned to the floor by his foot. The mind flayer leaving the Orc to do the dirty work leaves while leaving behind an army intellect devourers. The party battles and successfully Defeated the Orc Wizard saving Floon.",
-    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "Bthuhl", "Zo"],
+    "partyMembers":["Aoi", "Cero", "Cornell", "Kasel", "Kormag", "B'thuhl", "Zo"],
     "location":"4"
   }
 ]

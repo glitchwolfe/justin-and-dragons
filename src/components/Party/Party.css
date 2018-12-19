@@ -22,16 +22,17 @@
   font-weight: bold;
   text-shadow: 1px 1px 1px #000;
   text-align:  center;
+  grid-row:    6 / 1;
 
-  transition-timing-function: ease-in;
-  transition: 0.25s;
-  transform:  translateX(-200%);
+  /* transition-timing-function: ease-in; */
+  transition: 0.25s ease all;
+  transform:  translateY(200%);
 }
 
 .Party li.in-party{
   transition-timing-function: ease-out;
   transition: 0.25s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 
 .Party li img{

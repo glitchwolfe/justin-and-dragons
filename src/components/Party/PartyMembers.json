@@ -4,28 +4,28 @@
     "image":"Broxigar"
   },
   {
-    "name": "Rhogog",
-    "image":"archer"
+    "name": "Rho'gog",
+    "image":"barbarian"
   },
   {
     "name": "Rayven",
-    "image":"mage"
+    "image":"archer"
   },
   {
     "name": "Lothkorius",
-    "image":"bard"
+    "image":"druid"
   },
   {
     "name": "Hada",
     "image":"Hada"
   },
   {
-    "name":"Carmine",
+    "name": "Carmine",
     "image":"barbarian"
   },
   {
     "name": "Sawyer",
-    "image":"mechanic"
+    "image":"rogue"
   },
   {
     "name": "Thorkel",
@@ -33,28 +33,30 @@
   },
   {
     "name": "Rhazer",
-    "image":"pirate"
+    "image":"mage"
   },
   {
     "name": "Quiet",
-    "image":"valkyre"
+    "image":"rogue"
   },
   {
     "name": "Bolt",
     "image":"archer"
   },
 
+
+
   {
-    "name":"Argentum",
-    "image":"barbarian"
+    "name": "Argentum",
+    "image":"bard"
   },
   {
-    "name":"Komrk",
-    "image":"barbarian"
+    "name": "Kom'rk",
+    "image":"archer"
   },
   {
     "name":"Magnus",
-    "image":"barbarian"
+    "image":"fighter"
   },
   {
     "name":"Thagus",
@@ -62,11 +64,11 @@
   },
   {
     "name":"Rozalin",
-    "image":"barbarian"
+    "image":"mage"
   },
   {
     "name":"Toadstool",
-    "image":"barbarian"
+    "image":"alchemist"
   },
   {
     "name":"Boskov",
@@ -74,24 +76,26 @@
   },
   {
     "name":"Tenor",
-    "image":"barbarian"
+    "image":"bard"
   },
 
+
+
   {
-    "name":"Elect",
+    "name":"E'lect",
     "image":"mage"
   },
   {
     "name":"Vhate",
-    "image":"mage"
+    "image":"pirate"  
   },
   {
     "name":"Ogda",
-    "image":"mage"
+    "image":"fighter"
   },
   {
     "name":"Tannenbaum",
-    "image":"mage"
+    "image":"cleric"
   },
   {
     "name":"Rhazer",
@@ -99,59 +103,61 @@
   },
   {
     "name":"Kelibourne",
-    "image":"mage"
+    "image":"archer"
   },
   {
     "name":"Karasu",
-    "image":"mage"
+    "image":"goku"
   },
   {
     "name":"Cole",
-    "image":"mage"
+    "image":"gunslinger"
   },
   {
     "name":"Sirus",
-    "image":"mage"
+    "image":"bard"
   },
   {
     "name":"Celestia",
-    "image":"mage"
+    "image":"rogue"
   },
+
+
 
   {
     "name":"Aoi",
-    "image":"archer"
+    "image":"rogue"
   },
   {
     "name":"Cero",
-    "image":"archer"
+    "image":"monk"
   },
   {
     "name":"Cornell",
-    "image":"archer"
+    "image":"mage"
   },
   {
     "name":"Denasi",
-    "image":"archer"
+    "image":"rock"
   },
   {
     "name":"Hamilcar",
-    "image":"archer"
+    "image":"fighter"
   },
   {
     "name":"Kasel",
-    "image":"archer"
+    "image":"fighter"
   },
   {
     "name":"Kormag",
-    "image":"archer"
+    "image":"druid"
   },
   {
-    "name":"Bthuhl",
-    "image":"archer"
+    "name":"B'thuhl",
+    "image":"pirate"
   },
   {
     "name":"Zo",
-    "image":"archer"
+    "image":"monk"
   }
 ]

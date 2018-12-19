@@ -8,14 +8,23 @@ import broxigar from '../../images/sprites/Broxigar.png';
 import hada     from '../../images/sprites/Hada.png';
 
 // Generic Sprites
-import archer    from '../../images/sprites/archer.png';
-import barbarian from '../../images/sprites/barbarian.png';
-import bard      from '../../images/sprites/bard.png';
-import cleric    from '../../images/sprites/cleric.png';
-import mage      from '../../images/sprites/mage.png';
-import mechanic  from '../../images/sprites/mechanic.png';
-import pirate    from '../../images/sprites/pirate.png';
-import valkyre   from '../../images/sprites/valkyre.png';
+import alchemist  from '../../images/sprites/alchemist.png';
+import archer     from '../../images/sprites/archer.png';
+import barbarian  from '../../images/sprites/barbarian.png';
+import bard       from '../../images/sprites/bard.png';
+import cleric     from '../../images/sprites/cleric.png';
+import druid      from '../../images/sprites/druid.png';
+import fighter    from '../../images/sprites/fighter.gif';
+import goku       from '../../images/sprites/goku.png';
+import gunslinger from '../../images/sprites/gunslinger.png';
+import mage       from '../../images/sprites/mage.png';
+import mechanic   from '../../images/sprites/mechanic.png';
+import monk       from '../../images/sprites/monk.png';
+import pirate     from '../../images/sprites/pirate.png';
+import rock       from '../../images/sprites/rock.png';
+import rogue      from '../../images/sprites/rogue.png';
+import samurai    from '../../images/sprites/samurai.gif';
+import valkyre    from '../../images/sprites/valkyre.png';
 
 class Party extends Component {
 
@@ -68,6 +77,9 @@ class Party extends Component {
     for(let member of partyMembers){
       let img;
       switch(member.image){
+        case "alchemist":
+          img = alchemist;
+          break;
         case "archer":
           img = archer;
           break;
@@ -83,6 +95,18 @@ class Party extends Component {
         case "cleric":
           img = cleric;
           break;
+        case "druid":
+          img = druid;
+          break;
+        case "fighter":
+          img = fighter;
+          break;
+        case "goku":
+          img = goku;
+          break;
+        case "gunslinger":
+          img = gunslinger;
+          break;
         case "Hada":
           img = hada;
           break;
@@ -92,9 +116,21 @@ class Party extends Component {
         case "mechanic":
           img = mechanic;
           break;
+        case "monk":
+          img = monk;
+          break;
         case "pirate":
         default:
           img = pirate;
+          break;
+        case "rock":
+          img = rock;
+          break;
+        case "rogue":
+          img = rogue;
+          break;
+        case "samurai":
+          img = samurai;
           break;
         case "valkyre":
           img = valkyre;
