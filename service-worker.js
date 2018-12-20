@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/justin-and-dragons/precache-manifest.5eec35fdb04259c8b5000d4c7a6cc933.js"
+  "/justin-and-dragons/precache-manifest.cf6208007b12694989f50316bb48deb7.js"
 );
 
 workbox.clientsClaim();
