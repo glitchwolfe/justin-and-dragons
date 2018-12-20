@@ -1,6 +1,6 @@
 .Party{
   position: fixed;
-  bottom:   8rem;
+  bottom:   4.5rem;
   pointer-events: none;
 }
 
@@ -41,17 +41,9 @@
 }
 
 @media screen and (max-width:700px){
-  .Party{
-    width: 100%;
-  }
-  
-  .Party li{
-    margin: 10px 8px;
-  }
-  
-  .Party li img{
-    height: 40px;
-  }
+  .Party{ width: 100%; }
+  .Party li{ margin: 5px; }
+  .Party li img{ height: 55px; }
 }
 
 .Party li img,
@@ -60,9 +52,13 @@
   margin:  auto;
 }
 
-#partyList.walking li img{
+#partyList.walking li .sprite{
   animation: walk 0.3s;
   animation-iteration-count: infinite;
+}
+
+#partyList.walking.left li .sprite img{
+  transform: scaleX(-1);
 }
 
 @keyframes walk {

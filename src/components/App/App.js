@@ -18,10 +18,18 @@ class App extends Component {
 
   // When scrolling, update the active event and trigger the party walking animation
   handleScroll = () => {
-    this.lastScrollX = window.scrollX;
+    
+    let isScrollingLeft = this.lastScrollX > document.getElementById("parallax").scrollLeft;
+    this.lastScrollX = document.getElementById("parallax").scrollLeft;
+    
     window.requestAnimationFrame(() => {
       this.determineActiveEvent();
-      this.refs.party.triggerWalkingAnimation();
+
+      if(isScrollingLeft)
+        this.refs.party.triggerWalkingAnimation(true);
+      else
+        this.refs.party.triggerWalkingAnimation(false);
+      
     });
   };
 
@@ -46,9 +54,8 @@ class App extends Component {
       let eventPosition = element.getBoundingClientRect().left;
       let eventSize     = element.clientWidth / 2;
 
-      console.log(eventSize)
-
-      if(element && eventPosition >= -eventSize && eventPosition <= eventSize){ // Max range is equal to the width of every event element
+      // If scroll X position is within eventSize * 2 of the left side of the screen
+      if(element && eventPosition >= -eventSize && eventPosition <= eventSize){
         let currentEvent = this.refs.timeline.getEvent(i);
             currentEvent.index = i;
             
@@ -115,7 +122,7 @@ class App extends Component {
   scrollToEvent = (i) => {
     if(i >= 0 && this.timelineEvents[i]){
       document.getElementById('parallax').scrollTo({
-        left:     this.timelineEvents[i].offsetLeft + 100, 
+        left:     this.timelineEvents[i].offsetLeft + 75, 
         behavior: "smooth"
       }); 
     }

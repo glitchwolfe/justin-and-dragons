@@ -39,9 +39,14 @@ class Party extends Component {
     }, false);
   };
 
-  triggerWalkingAnimation(){
-    document.getElementById("partyList").classList.add("walking");
-    this.scrollStop(() => { document.getElementById("partyList").classList.remove("walking") });
+  triggerWalkingAnimation(walkingLeft){
+    let partyList = document.getElementById("partyList");
+    
+    if(walkingLeft) partyList.classList.add("left")
+    else            partyList.classList.remove("left")
+  
+    partyList.classList.add("walking");
+    this.scrollStop(() => { partyList.classList.remove("walking"); });
   }
 
   // Remove "in-party" class to trigger animation, wait, then remove from DOM
@@ -138,7 +143,9 @@ class Party extends Component {
       }
       partyElements.push(
         <li id={member.name} key={i}>
-          <img src={img} alt={member.name} />
+          <div className="sprite">
+            <img src={img} alt={member.name} />
+          </div>
           <p>{member.name}</p>
         </li>
       );
