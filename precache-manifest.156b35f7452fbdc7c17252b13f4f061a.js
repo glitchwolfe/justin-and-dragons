@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/justin-and-dragons/static/media/goku.94f7e28d.png"
   },
   {
-    "revision": "b5d87b7ed5cecb3e15bc",
-    "url": "/justin-and-dragons/static/css/main.34a0acc7.chunk.css"
+    "revision": "bfa41e801eaa8e5535c3",
+    "url": "/justin-and-dragons/static/css/main.5e9e2a2e.chunk.css"
   },
   {
     "revision": "ff6d836d89e1150b4b9e",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "url": "/justin-and-dragons/static/media/fighter.ba938abe.gif"
   },
   {
-    "revision": "b5d87b7ed5cecb3e15bc",
-    "url": "/justin-and-dragons/static/js/main.b5d87b7e.chunk.js"
+    "revision": "bfa41e801eaa8e5535c3",
+    "url": "/justin-and-dragons/static/js/main.bfa41e80.chunk.js"
   },
   {
     "revision": "33589273b0d39a685199be881a4d7f0a",
@@ -104,7 +104,7 @@ self.__precacheManifest = [
     "url": "/justin-and-dragons/static/media/paper-texture.1663ba32.png"
   },
   {
-    "revision": "9dbb23f853bb80b49c8055b569b12f19",
+    "revision": "204ba6af07a2763ce87b7e238e16c2bf",
     "url": "/justin-and-dragons/index.html"
   }
 ];
