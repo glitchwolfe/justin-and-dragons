@@ -44,29 +44,17 @@ class App extends Component {
     for (let element of this.timelineEvents){
 
       let eventPosition = element.getBoundingClientRect().left;
+      let eventSize     = element.clientWidth / 2;
 
-      if(element && eventPosition >= -250 && eventPosition <= 250){ // Max range is equal to the width of every event element
+      console.log(eventSize)
+
+      if(element && eventPosition >= -eventSize && eventPosition <= eventSize){ // Max range is equal to the width of every event element
         let currentEvent = this.refs.timeline.getEvent(i);
-        
-        // Update party
-        let partyMembers = this.refs.timeline.getEvent(i).partyMembers;
-        this.refs.party.updateActiveMembers(partyMembers);
-        
-        // Mark timeline node as active
+            currentEvent.index = i;
+            
         element.classList.add("active");
-        this.currentEventIndex = i;
 
-        // Change background, if necessary
-        if(this.currentBackground === '' || this.currentBackground !== currentEvent.location){
-          this.setBackground(currentEvent.location);
-        }
-
-        // Display event details 
-        document.getElementById("eventDescription").innerHTML = `
-          <p class="event">${currentEvent.event}</p>
-          <p class="date">${currentEvent.date}</p>
-          <p>${currentEvent.description}</p>
-        `;
+        this.renderEvent(currentEvent);
       }
       else if(element){
         element.classList.remove("active");
@@ -75,44 +63,45 @@ class App extends Component {
     }
   }
 
-  setBackground = (index) => {
-    console.log('setting background...',index)
+  setBackground = (currentEvent) => {
+    if(currentEvent && (this.currentBackground === '' || this.currentBackground !== currentEvent.location)){
 
-    let parallaxContainer = document.getElementById('parallax');
-  
-    switch(index){
-      default:
-      case "1":
-        parallaxContainer.classList.add('forest');
+        let parallaxContainer = document.getElementById('parallax');
+      
+        switch(currentEvent.location){
+          default:
+          case "1":
+            parallaxContainer.classList.add('forest');
 
-        parallaxContainer.classList.remove('forest2');
-        parallaxContainer.classList.remove('crystals');
-        parallaxContainer.classList.remove('desert');
-        break;
-      case "2":
-        parallaxContainer.classList.add('desert');
+            parallaxContainer.classList.remove('forest2');
+            parallaxContainer.classList.remove('crystals');
+            parallaxContainer.classList.remove('desert');
+            break;
+          case "2":
+            parallaxContainer.classList.add('desert');
 
-        parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('forest2');
-        parallaxContainer.classList.remove('crystals');
-        break;
-      case "3":
-        parallaxContainer.classList.add('forest2');
+            parallaxContainer.classList.remove('forest');
+            parallaxContainer.classList.remove('forest2');
+            parallaxContainer.classList.remove('crystals');
+            break;
+          case "3":
+            parallaxContainer.classList.add('forest2');
 
-        parallaxContainer.classList.remove('crystals');
-        parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('desert');
-        break;
-      case "4":
-        parallaxContainer.classList.add('crystals');
+            parallaxContainer.classList.remove('crystals');
+            parallaxContainer.classList.remove('forest');
+            parallaxContainer.classList.remove('desert');
+            break;
+          case "4":
+            parallaxContainer.classList.add('crystals');
 
-        parallaxContainer.classList.remove('desert');
-        parallaxContainer.classList.remove('forest');
-        parallaxContainer.classList.remove('forest2');
-        break;
+            parallaxContainer.classList.remove('desert');
+            parallaxContainer.classList.remove('forest');
+            parallaxContainer.classList.remove('forest2');
+            break;
+        }
+
+      this.currentBackground = currentEvent.location;
     }
-
-    this.currentBackground = index;
   }
 
   nextItem = () => {
@@ -126,9 +115,53 @@ class App extends Component {
   scrollToEvent = (i) => {
     if(i >= 0 && this.timelineEvents[i]){
       document.getElementById('parallax').scrollTo({
-        left:     this.timelineEvents[i].offsetLeft, 
+        left:     this.timelineEvents[i].offsetLeft + 100, 
         behavior: "smooth"
       }); 
+    }
+  }
+
+  renderEvent = (currentEvent) => {
+    if(currentEvent.index !== this.currentEventIndex){
+      let eventDescription = document.getElementById("eventDescription");
+      
+      // Show preview only on mobile
+      if(window.innerWidth <= 700)
+        eventDescription.classList.add("preview");
+      else
+        eventDescription.classList.remove("preview");
+
+      eventDescription.classList.add("preAnimation");
+      
+      // Add Event to DOM - wait 300ms so CSS fade can trigger
+      setTimeout(()=>{
+        eventDescription.innerHTML = `
+          <div class="eventContainer">  
+            <p class="event">${currentEvent.event}</p>
+            <p class="date">${currentEvent.date}</p>
+            <button class="readMore">Read More...</button>
+            <button class="readLess">Read Less...</button>
+            <p class="description">${currentEvent.description}</p>
+          </div>
+        `;
+      
+        eventDescription.getElementsByClassName('readMore')[0].addEventListener("click", () => {
+          eventDescription.classList.remove("preview"); 
+        });
+        eventDescription.getElementsByClassName('readLess')[0].addEventListener("click", () => {
+          eventDescription.classList.add("preview"); 
+        });
+
+        eventDescription.classList.remove("preAnimation");
+      }, 300)
+          
+      // Update visible party members
+      this.refs.party.updateActiveMembers(currentEvent.partyMembers);
+  
+      // Change background
+      this.setBackground(currentEvent);
+
+      this.currentEventIndex = currentEvent.index;
     }
   }
 

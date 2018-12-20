@@ -42,8 +42,8 @@
 ol li {
 	position: relative;
 	display:  inline-block;
-	float:    left;
-	width:    500px;
+  width:    500px;
+  max-width: 100vw;
   height:   50px;
 }
 
@@ -65,7 +65,7 @@ ol li .point {
 }
 
 #eventDescription {
-  transition: 0.3s ease height;
+  transition: 0.2s ease all;
 
   position: fixed;
   top:      100px;
@@ -73,7 +73,6 @@ ol li .point {
   z-index:  1;
   width:    600px;
 
-  padding:    5px 10px;
   box-shadow: 0 0 5px #979AA4;
 
   background: url('../../images/event-description/stat-block-top-texture.png'),
@@ -93,10 +92,95 @@ ol li .point {
   line-height: 1.6;
 }
 
+#eventDescription.preAnimation{
+  opacity: 0;
+  max-height: 0;
+}
+
+#eventDescription .readMore,
+#eventDescription .readLess{
+  display: none;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.eventContainer{
+  padding:    15px;
+}
+
+@media screen and (max-width:700px){
+  #eventDescription.preview{
+    background: none;
+    box-shadow: none;
+    color: #FFFFF0;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    font-size: 3rem;
+    height: auto;
+    bottom: unset;
+  }
+  #eventDescription.preview .eventContainer{
+    padding-bottom: 0;
+  }
+  #eventDescription.preview .description{
+    display: none;
+  }
+  #eventDescription.preview .date{
+    border-bottom: none;
+  }
+  #eventDescription.preview .readMore{
+    display: block;
+  }
+  #eventDescription.preview .readLess{
+    display: none;
+  }
+  
+  #eventDescription{
+    position: fixed;
+    
+    width:     unset;
+    max-width: 100vw;
+    height:    unset;    
+    
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+    
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display:        flex;
+    flex-direction: column;
+
+    pointer-events: unset;
+  }
+
+  #eventDescription .eventContainer{
+    padding: 80px 15px;
+    flex: 1;
+  }
+
+  #eventDescription .readLess{
+    display: block;
+  }
+}
+
+#eventDescription > * {
+  max-width: 100%;
+  display: block;
+}
+
 #eventDescription .date,
 #eventDescription .event{
-  font-size:   24px;
+  font-size:   26px;
   font-family: 'Marck Script', cursive;
+  margin: 0;
 }
 
 #eventDescription .date{
@@ -107,15 +191,17 @@ ol li .point {
 ol li .pointDate{
   font-family: 'Marck Script', cursive;
   text-shadow: 1px 1px 1px #000;
-  color: #FFFFF0;
-  font-size: 1.6rem;
-  text-align: center;
-  transition: 0.3s ease all;
+  color:     #FFFFF0;
+  font-size:   1.6rem;
+  text-align:  center;
+  transition:  0.3s ease all;
 }
 
 /* ---- Show description when event is active ---- */
 ol li.active .pointDate{
-  color: rgb(130,32,0);
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin: 15px;
 }
 ol li.active .point {
   width:      15px;
